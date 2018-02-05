@@ -1,6 +1,14 @@
 # REACT-kgmusic
 react项目，基于酷狗音乐接口做的音乐播放器，使用proxy进行跨域
 
+# 思路
+
+>  npm install     安装依赖（若有些依赖还是没安装，请根据package.json文件单独安装依赖）
+
+>  npm start      运行
+
+>  npm run build  打包
+
 # 实现的功能
 
 ```
@@ -56,10 +64,6 @@ react项目，基于酷狗音乐接口做的音乐播放器，使用proxy进行�
 ![](https://github.com/Ercyao/REACT-kgmusic/blob/master/img/3-2.jpg)
 ![](https://github.com/Ercyao/REACT-kgmusic/blob/master/img/4-1.jpg)
 
-# 提示
-npm install     安装依赖（若有些依赖还是没安装，请根据package.json文件单独安装依赖）
-npm  start      运行
-npm  run build  打包
 
 # 总结
 一开始写的时候，被跨域问题坑了很久，最后还是用node的express搭建简单的服务器实现地址代理来进行跨域，在解决跨域问题后，又遇到切换页面后，音乐会停止播放，后来我把装有audio控件的js单独放外面，使每个页面都有，不随路由切换，虽然这样解决了切换路由音乐听的坑，但又遇到监听的坑，后来用了定时器解决，虽然功能基本实现了，但还是有些地方需要优化下
