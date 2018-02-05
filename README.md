@@ -30,13 +30,11 @@ react项目，基于酷狗音乐接口做的音乐播放器
     *  search                搜索
     *  list                  公共列表页面
     *  search                
-        *  play                搜索
-        *  play                搜索
-    *  list                  公共列表页面
-    *  play/play             播放音乐页面
-    *  play/Audio            存放播放器audio控件
+        *  play           播放音乐页面
+        *  Audio          存放播放器audio控件
     *  profile               我的
     *  songmenu              歌单
+    *  list                  公共列表页面
 
 * router          路由配置
 * static/img      图片
