@@ -1,0 +1,270 @@
+input[type=range] {
+  -webkit-appearance: none!important;
+  -moz-appearance: none!important;
+}
+input[type=range]::-webkit-slider-thumb{  
+  -webkit-appearance: none!important;
+  -moz-appearance: none!important;
+}
+input[type=range]::-moz-range-thumb{  
+  -webkit-appearance: none!important;
+  -moz-appearance: none!important;
+}
+
+/* 全部*/
+.audio-box{
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+} 
+/* 歌名和歌手  头部 */
+.audio-header{
+  position: relative;
+  width: 100%;
+  height: 6%;
+  padding: 2% 0;
+  text-align: center;
+  color: white;
+}
+#list-icon{
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  width: 25px;
+  height: 25px;
+  background:url(../../../../react-kgmusic/src/static/img/music_icon.png) no-repeat scroll -21px -33px;
+}
+#love-icon{
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  width: 25px;
+  height: 25px;
+}
+.love_yes{
+	background:url(../../../../react-kgmusic/src/static/img/music_icon.png) no-repeat scroll -50px -60px;
+}
+.love_no{
+  background:url(../../../../react-kgmusic/src/static/img/music_icon.png) no-repeat scroll -20px -60px;
+}
+.audio-header .songname{
+  font-size: 16px;
+  height: 25px;
+  font-weight: bold;
+  overflow: hidden;
+  width: 80%;
+  margin: 0 10%;
+}
+.audio-header .singername{
+  font-size:13px;
+  opacity: 0.5;
+  height: 20px;
+  line-height: 30px;
+  overflow: hidden;
+}
+.audio-header .sn{
+	max-width: 70%;
+	margin: 0 5px;
+	height: 20px;
+  overflow: hidden;
+	
+}
+/* 歌词面板 */
+.lyrics-box{
+  width: 90%;
+  height: 58%;
+  margin: 3% 5% 4%;
+  text-align: center;
+  overflow-y: hidden;
+}
+.lyrics-panels{
+  color: #678e95;
+  line-height: 30px;
+}
+.lyrics-panels .act{
+  color: #fff;
+}
+/* 时间 */
+.time-box{
+	position: absolute;
+  top: 69%;
+	font-size: 12px;
+	width: 96%;
+	margin: 0 2%;
+	display: flex;
+	justify-content: space-between;
+}
+/*进度条*/ 
+.progress-bar{
+  position: relative;
+  width: 74%;
+  height: 3px;
+  margin: 0 13%;
+}
+/*进度*/ 
+.progress-change{
+  position: absolute;
+  z-index: 2;
+  width: 0%;
+  height: 3px;
+  background: #E45267;
+  border-radius: 15px;
+}
+/*横条样式*/     
+.progress-range {
+	position: absolute;
+  width: 100%; 
+  height:2px; 
+  background: #F1F1F1;
+  border-radius: 15px;
+}  
+/*拖动块的样式*/  
+.progress-range::-webkit-slider-thumb{  
+  height: 22px;
+  width: 22px;
+  background: #E45267; 
+  border-radius: 50%; 
+  border: 2px solid rgba(205, 224, 230, 0.8);
+}  
+.progress-range::-moz-range-thumb {  
+  height: 22px;
+  width: 22px;
+  background: #E45267; 
+  border-radius: 50%; 
+  border: 2px solid rgba(205, 224, 230, 0.8);
+}
+/* 按钮 */
+.player-btn{
+	margin-top: 10%;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+}
+.player-btn .player-item{
+  color: #aaa;
+  border-radius: 50%;
+  background: transparent;
+  box-shadow: 0 2px 12px rgba(0, 0, 0,0.8); 
+}
+.cut{
+  width: 50px;
+  height: 50px; 
+  margin: 15px 20px;
+}
+.cut div{
+  margin: 7px 5px;
+  width: 40px;
+  height: 36px; 
+}
+.upcut{
+  background:url(../../../../react-kgmusic/src/static/img/music_icon.png) no-repeat scroll -10px -110px;
+}
+.downcut{
+  background:url(../../../../react-kgmusic/src/static/img/music_icon.png) no-repeat scroll -42px -110px;
+}
+.control{
+  width: 75px;
+  height: 75px;
+}
+.control div{
+  margin: 5px 14px;
+  width: 51px;
+  height: 65px;
+}
+.play{
+  background:url(../../../../react-kgmusic/src/static/img/music_icon.png) no-repeat scroll -44px -145px;	
+}
+.pause{
+  background:url(../../../../react-kgmusic/src/static/img/music_icon.png) no-repeat scroll 2px -145px;	
+}
+/* 播放列表 */
+#player-list{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+}
+.list-bg{
+ position: relative;
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.5;
+}
+.list-con{
+  position: absolute;
+  bottom: 3em;
+  z-index: 99;
+  width: 100%;
+  height: 50%;
+  background: #678e95;
+  overflow: hidden;
+}
+.list-title{
+  width: 90%;
+  padding:0 5%;
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #ccc;
+  background: #678e95;
+}
+.list-close{
+	float: right;
+}
+.list-con ul{ 
+  padding-bottom: 50px;
+  overflow-y: auto;
+  height: 80%;
+}
+.list-con ul li span{ 
+  height: 35px;
+  line-height: 40px;
+}
+.list-num{
+  width: 8%;
+  text-align: center;
+  margin: 0 1%;
+  overflow: hidden;
+}
+.list-name{
+  width: 90%;
+
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border-bottom: 1px solid #ccc;
+}
+.red{
+  color: #f25460;
+}
+#prompt_popup{
+	position: fixed;
+	z-index: 999;
+	top: 30%;
+	left: 10%;
+	width: 80%;
+	text-align: center;
+}
+#prompt_popup span{
+	padding: 3% 6%;
+	text-align: center;
+	border-radius: 5px;
+	background: #000000;
+	opacity: 0.6;
+}
+.none{
+	display: none;
+}
+.block{
+	display: block;
+}

@@ -1,0 +1,91 @@
+/* 搜索频道   start*/
+.search{
+  height: 100%;
+  padding: 0 3%;
+  box-sizing: border-box;
+  margin-top: 4rem;
+}
+.search-bar{
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+.search-box{
+  position: relative;
+  width: 84%; 
+}
+.search-bar .icon-clear{
+  position: absolute;
+  top: 0;
+  right: 15px;
+  z-index: 2;
+  color: #ccc;
+  text-shadow: 2px 2px 2px #678e95;
+}
+.search-bar .search-input{
+  color: #fff;
+  width: 100%;
+  height: 30px;
+  padding:0 10% 0 5%;
+  border: 1px solid #eee;
+  box-sizing: border-box;
+  background: transparent;
+}
+.search-bar .search-input:hover,
+.search-bar .search-input:focus{
+  box-shadow: 4px 10px 12px rgba(90, 140, 150, 0.4);
+}
+
+.search-hot{
+  margin:3% 0;
+}
+.hot-title{
+  font-size: 16px;
+  font-weight: bold;
+  color: #e45267;
+  padding:5px 10px;
+  text-shadow: 6px 4px 2px #678e95;
+}
+.search-hot ul{
+  margin: 10px 0; 
+}
+.search-hot ul li{
+  display: inline-block;
+  padding: 4px 10px;
+  margin: 5px;
+  border-radius:30px;
+  color: #eee;
+  border: 1px solid #79b3bd;
+}
+.search-result ul,
+.search-history ul{
+  height: 100%;
+  overflow: hidden;	
+}
+.search-result ul li,
+.search-history ul li{
+  width: 94%;
+  padding: 10px 2% 10px 4%;
+  border-bottom: 1px solid #ccc;
+}
+.record_allDel{
+  font-size: 16px;
+  width: 100%;
+  padding: 20px 0 5px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #f1f1f1;
+  box-sizing: border-box;
+  color: #e45267;
+  text-shadow: 8px 6px 2px #678e95;
+}
+.record_allDel .del-btn{
+  width: 30px;
+  font-size: 12px;
+  height: 25px;
+  line-height: 30px;
+  color: #888;
+}
+/* 搜索频道   end*/

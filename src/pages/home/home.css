@@ -1,0 +1,128 @@
+.music_box{
+    width:100%;
+    height:100%;
+}
+.music_list_box{
+    height: 100%;
+    margin-top: 3.1rem;
+} 
+/* 推荐频道   start*/
+/* 轮播图 */
+.slider_box{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+.slider_box ul{
+    position: relative;
+    width: 400%;
+    height: 100%;
+    overflow-x: auto;
+    animation: banner 10s ease-out infinite;
+    -webkit-animation: banner 10s ease-out infinite;
+}
+@keyframes banner{0%,20% {left: 0px;}25%,45% {left: -100%;}50%,70% {left: -200%;}75%,95% {left: -300%;}100% {left: 0%;}}
+@-webkit-keyframes banner{0%,20% {left: 0px;}25%,45% {left: -100%;}50%,70% {left: -200%;}75%,95% {left: -300%;}100% {left: 0%;}}
+.slider_box li{
+    float: left;
+    width: 25%;
+}
+.slider_box img{
+    width: 100%;
+    height: 150px; 
+}
+.slider_dot{
+    position:absolute;
+    z-index: 99;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+.slider_dot span{
+	width: 8px;
+	height: 8px;
+	margin: 5px;
+	background: #888;
+	border-radius: 50%;
+}
+.slider_dot span:nth-child(1){
+    animation: slider_dot1 10s ease-out infinite;
+}
+@keyframes slider_dot1{0%,20%{background: #fff;}25%,98%{background: #888;}100%{background: #fff;}}
+.slider_dot span:nth-child(2){
+    animation: slider_dot2 10s ease-out infinite;
+}
+@keyframes slider_dot2{0%,20%{background: #888;}25%,45%{background: #fff;}50%,100%{background: #888;}}
+.slider_dot span:nth-child(3){
+    animation: slider_dot3 10s ease-out infinite;
+}
+@keyframes slider_dot3{0%,45%{background: #888;}50%,70%{background: #fff;}75%,100%{background: #888;}}
+.slider_dot span:nth-child(4){
+    animation: slider_dot4 10s ease-out infinite;
+}
+@keyframes slider_dot4{0%,70%{background: #888;}75%,95%{background: #fff;}100%{background: #888;}}
+
+/* 新歌首发 */
+.song_box{
+	width: 94%;
+	margin:3em 3%;
+	border-radius: 5px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding: 2%;
+	box-shadow: 0 0 3px 3px rgba(90, 150, 160, 0.6);
+}
+.tag_title{
+	color: #08bbc1;
+	font-size: 20px;
+	height:45px;
+	line-height: 45px;
+	border-bottom:1px solid #678e95;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+
+/* 新歌首发 */
+.song_box ul{
+    height:205px;
+    overflow: hidden;
+}
+.song_box ul li a{
+    padding-left: 3%;
+    height:30px;
+    line-height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.song_box .song{
+    width: 80%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/*切换页数*/
+.pagination{
+    height:40px;
+    line-height: 40px;
+    color: #eee;
+    text-align: center;
+}
+.previous,.next{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-top: 2px solid #333;
+    border-right: 2px solid #333;
+    vertical-align: middle;
+}
+.previous,.next{
+    transform: rotate(-135deg);
+}
+.next{
+    transform: rotate(45deg);
+}
+/* 推荐频道   end*/

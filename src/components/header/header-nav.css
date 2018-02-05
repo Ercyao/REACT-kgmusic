@@ -1,0 +1,120 @@
+.header{
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;	
+}
+.h_nav{
+    font-size: 16px;
+	display: flex;
+	justify-content: space-around;
+	background: url(../../../../react-kgmusic/build/static/media/bg_img.2ce36d19.jpg);
+	box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+.h_nav li{
+	display: inline-block;
+	width: 15%;
+	text-align: center;
+	margin:0 5%;
+}
+.h_nav li a{
+	color: #FFFFFF;
+}
+.h_nav .active{
+	border-bottom: 3px solid #5F9EA0;
+}
+.list-header-box{  
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  width:100%;
+  height:150px;
+  box-shadow:0 5px 7px rgba(90, 150, 160, 0.6); 
+}
+.list-header-bg{
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+  background: url(../../../../react-kgmusic/src/static/img/listen.jpg);
+  background-size: 100% cover;
+}
+
+
+.list-header-title{
+  position: relative;
+  z-index: 199;
+  width: 100%;
+  font-size: 16px;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  text-align: center;	
+}
+.goback-icon{
+  position: absolute;
+  left: 5%;
+  top: 15px;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #FFFFFF;
+  border-right: 2px solid #FFFFFF;
+  vertical-align: middle;
+  transform: rotate(-135deg);
+}
+.goback-txt{
+  width:80%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+
+.list-header-con{
+  position: relative;
+  z-index: 199;
+  padding: 10px 5%;
+}
+.list-header-txt{
+  font-weight:bold;
+  color:#fb483a;
+  height: 2rem;
+  overflow: hidden;
+}
+/*.list-header-theme{
+  width: 60%;
+  font-size: 20px;
+  text-align: center;
+}*/
+.list-header-name{
+  float: right;
+}
+.list-header-longtxt{
+  text-indent: 2em;
+  color: #f1f1f1;
+  height: 5rem;
+  overflow: hidden;
+}
+.list-header-icon{
+  position: absolute;
+  z-index: 999;
+  bottom: -100px;
+  right: 5px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color:#fff;
+  background-image: url(../../../../react-kgmusic/src/static/img/cd.png);
+  background-size: 100% 100%;
+  box-shadow:0 5px 3px rgba(90, 150, 160, 0.9);
+  animation: headicon 1s linear;
+  -webkit-animation: headicon 1s linear;
+}
+@keyframes headicon{0%{bottom:-100px;}25%{bottom:-50px;}50%{bottom:-110px;} 75%{bottom:-70px;} 100%{bottom:-100px;}}
+@-webkit-keyframes headicon{0%{bottom:-100px;}25%{bottom:-50px;}50%{bottom:-110px;} 75%{bottom:-70px;} 100%{bottom:-100px;}}

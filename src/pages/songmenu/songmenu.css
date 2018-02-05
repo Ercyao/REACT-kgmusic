@@ -1,0 +1,50 @@
+.songmenu-wrapper{
+  width: 100%;
+  padding: 3%;
+  box-sizing: border-box;
+}
+.songmenu-item{
+  display: inline-block;
+  position: relative;
+  width: 42%;
+  height: 100px;
+  margin: 4%;
+  box-shadow:1px 3px 5px rgba(0, 0, 0, 0.6);
+}
+.songmenu-img{
+  width: 100%;
+  height: 100%;
+}
+.songmenu-bg{
+  position: absolute;
+  z-index: 2;
+  top: -1%;
+  left: -1%;
+  width: 102%;
+  height: 102%;
+  background: #000;
+  opacity: 0.5;
+}
+.songmenu-con{
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  padding: 0 5%;
+  width: 90%;
+  font-size: 13px;
+  text-align:center;
+}
+.songmenu-icon{
+  width: 55px;
+  height: 55px;
+  margin: 12px auto;
+  background: url(../../../../react-kgmusic/src/static/img/music_icon.png) no-repeat scroll 0 -214px;
+}
+.songmenu-con span{
+  display: inline-block;
+  width: 100%;
+  height: 18px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

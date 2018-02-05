@@ -1,0 +1,26 @@
+.footer-nav{
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3em;
+    background: #5F9EA0;
+}
+.footer-nav li{
+	display: inline-block;
+	width: 25%;
+	text-align: center;
+	padding-top: 5px;
+}
+.footer-nav li a{
+	font-size: 12px;
+	color: #FFFFFF;
+}
+.footer-nav .active a{
+	color: #FF0000;
+}
+.footer-nav .nav-icon{
+	width: 20px;
+	height: 20px;
+}
