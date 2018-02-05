@@ -1,7 +1,7 @@
 # REACT-kgmusic
 react项目，基于酷狗音乐接口做的音乐播放器，使用proxy进行跨域
 
-# 思路
+# 提示
 
 >  npm install     安装依赖（若有些依赖还是没安装，请根据package.json文件单独安装依赖）
 
