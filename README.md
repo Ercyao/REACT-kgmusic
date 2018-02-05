@@ -19,30 +19,28 @@ react项目，基于酷狗音乐接口做的音乐播放器
 ```
 
 # 目录结构
-
 * components
-    *  common/NotFound.js         报错显示页面
-    *  footer/footer-nav.js       底部导航栏
-    *  header/header-nav.js       头部导航栏
-    *  header/header-goback.js    子页面的公共头部
-    
+    *  common/NotFound.js         报错显示页面
+    *  footer/footer-nav.js       底部导航栏
+    *  header/header-nav.js       头部导航栏
+    *  header/header-goback.js    子页面的公共头部
 * pages
-    *  category              分类
-    *  home                  推荐
-    *  list                  公共列表页面
-    *  play
-        *  play    播放音乐页面
-        *  Audio   存放播放器audio控件
+    *  category              分类
+    *  home                  推荐
+    *  search                搜索
+    *  list                  公共列表页面
+    *  play/play             播放音乐页面
+    *  play/Audio            存放播放器audio控件
     *  profile               我的
-    *  search                搜索
-    *  songmenu              歌单
+    *  songmenu              歌单
+
 * router          路由配置
 * static/img      图片
-* unit 
-    *  Ajax     封装ajax方法
-    *  Format   封装格式化等方法
-* global        定义公共变量 
-* server        服务器配置 
+* units
+    *  Ajax       封装ajax方法
+    *  Format     封装格式化等方法
+* global          定义公共变量 
+* server          服务器配置 
 
 
 # 效果图
